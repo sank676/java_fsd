@@ -1,41 +1,45 @@
-// employee gets goldcoin -subclass employee 
+package ustbatchno3.sonarqubetest;
 
-
-package ustbatchno3.junit5testcases;
-
-import java.util.Date;
-
- public class Employee {
+public class Employee {
 	private String name;
-	private Date joiningdate;
-	private int goldcoins; 
-	
+	private int age;
+	private int years_worked;
+	private double salary;
+	public Employee(String name, int age, int years_worked, double salary) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.years_worked = years_worked;
+		this.salary = salary;
+	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getJoiningdate() {
-		return joiningdate;
+	public int getAge() {
+		return age;
 	}
-	public void setJoiningdate(Date joiningdate) {
-		this.joiningdate = joiningdate;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public int getGoldcoins() {
-		return goldcoins;
+	public int getYears_worked() {
+		return years_worked;
 	}
-	public void setGoldcoins(int goldcoins) {
-		this.goldcoins = goldcoins;
+	public void setYears_worked(int years_worked) {
+		this.years_worked = years_worked;
 	}
-	public Employee(String name, Date joiningdate, int goldcoins) {
-		super();
-		this.name = name;
-		this.joiningdate = joiningdate;
-		this.goldcoins = goldcoins;
+	public double getSalary() {
+		return salary;
 	}
-	public Employee(String string, String string2) {
-		// TODO Auto-generated constructor stub
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
-
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", age=" + age + ", years_worked=" + years_worked + ", salary=" + salary
+				+ "]";
+	}
+	
 }
