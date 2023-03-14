@@ -1,3 +1,6 @@
+/*employee gets 5 gold coin if he joined the company after 80 days from the first day(january 1) ,3 gold coins if 172 days and 1 coin if 255 days */
+
+
 package ustbatchno3.junit5testcases;
 
 import java.time.LocalDate;
