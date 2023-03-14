@@ -1,3 +1,7 @@
+/*  create an employee object with attribute name,age,yers worked,salary
+increment salary based on experience , 1-3 years:2.5% increment,3-6years: 5%,6-10years: 10%,above 10: 12%*/
+
+
 package ustbatchno3.sonarqubetest;
 
 import java.util.ArrayList;
